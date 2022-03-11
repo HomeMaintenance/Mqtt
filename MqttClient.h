@@ -83,7 +83,7 @@ namespace myMqtt{
          */
         explicit Client(const std::string& serverURI, const std::string& clientURI);
         explicit Client(const Client& other) = delete;
-        ~Client();
+        virtual ~Client();
         /**
          * @brief Connect to Mqtt broker
          *
